@@ -6,7 +6,6 @@ License: BSD
 Group: Development/Python
 Source0: http://downloads.sourceforge.net/pyasn1/pyasn1-%{version}.tar.gz
 URL: http://pyasn1.sourceforge.net/
-BuildRoot: %{_tmppath}/%{name}-%{version}-root-%(id -u -n)
 %py_requires -d
 BuildArch: noarch
 
