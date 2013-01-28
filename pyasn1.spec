@@ -1,12 +1,11 @@
 Name: pyasn1
 Summary: ASN.1 tools for Python
-Version: 0.0.11a
-Release: %mkrel 3
+Version: 0.1.6
+Release: 1
 License: BSD
 Group: Development/Python
 Source0: http://downloads.sourceforge.net/pyasn1/pyasn1-%{version}.tar.gz
 URL: http://pyasn1.sourceforge.net/
-BuildRoot: %{_tmppath}/%{name}-%{version}-root-%(id -u -n)
 BuildRequires: python-devel
 BuildArch: noarch
 
@@ -23,11 +22,7 @@ compiler is planned for implementation in the future.
 python ./setup.py build
 
 %install
-rm -rf %{buildroot}
 python ./setup.py install --root=%{buildroot}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
