@@ -1,7 +1,7 @@
 Summary:	ASN.1 tools for Python
 Name:		python-pyasn1
 Version:	0.1.9
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Python
 Url:		http://pyasn1.sourceforge.net/
