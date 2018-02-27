@@ -1,13 +1,14 @@
 Summary:	ASN.1 tools for Python
 Name:		python-pyasn1
-Version:	0.1.9
-Release:	2
+Version:	0.4.2
+Release:	1
 License:	BSD
 Group:		Development/Python
 Url:		http://pyasn1.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/pyasn1/pyasn1-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python3)
+BuildRequires:	python-setuptools
 %rename pyasn1
 
 %description
@@ -18,7 +19,8 @@ compiler is planned for implementation in the future.
 %package -n python2-pyasn1
 Summary:	ASN.1 tools for Python 2.x
 Group:		Development/Python
-BuildRequires:	pkgconfig(python)
+BuildRequires:	python2-setuptools
+BuildRequires:	pkgconfig(python2)
 
 %description -n python2-pyasn1
 This project is dedicated to implementation of ASN.1 types (concrete syntax)
@@ -45,7 +47,7 @@ cd ..
 python ./setup.py install --root=%{buildroot}
 
 %files
-%doc CHANGES.txt LICENSE.txt README.txt TODO.txt
+%doc CHANGES.rst LICENSE.rst README.md TODO.rst
 %{python_sitelib}/pyasn1
 %{python_sitelib}/*.egg-info
 
