@@ -1,4 +1,2 @@
-removed_sources:
-  pyasn1-0.1.9.tar.gz: d19599c5d9d039ead21ffcd1a2392c29a838ae03
 sources:
-  pyasn1-0.4.2.tar.gz: 6f997e4b9aace55948e45cffe32980bb92985ce2
+  pyasn1-0.4.5.tar.gz: 5615b3f0e1d2c0d4aa87e318e93665542434dc41
