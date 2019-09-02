@@ -1,11 +1,11 @@
 Summary:	ASN.1 tools for Python
 Name:		python-pyasn1
-Version:	0.4.6
+Version:	0.4.7
 Release:	1
 License:	BSD
 Group:		Development/Python
 Url:		http://pyasn1.sourceforge.net/
-Source0:	https://files.pythonhosted.org/packages/e3/12/dfffc84b783e280e942409d6b651fe4a5a746433c34589da7362db2c99c6/pyasn1-0.4.6.tar.gz
+Source0:	https://files.pythonhosted.org/packages/ca/f8/2a60a2c88a97558bdd289b6dc9eb75b00bd90ff34155d681ba6dbbcb46b2/pyasn1-0.4.7.tar.gz
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	python-setuptools
