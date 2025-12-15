@@ -8,6 +8,7 @@ Url:		https://pyasn1.sourceforge.net/
 Source0:	https://files.pythonhosted.org/packages/source/p/pyasn1/pyasn1-%{version}.tar.gz
 BuildArch:	noarch
 BuildSystem:	python
+BuildRequires:	python%{pyver}dist(setuptools)
 %rename pyasn1
 
 %description
