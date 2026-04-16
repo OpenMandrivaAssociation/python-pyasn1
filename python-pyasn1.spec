@@ -1,14 +1,19 @@
-Summary:	ASN.1 tools for Python
+%define module pyasn1
+
 Name:		python-pyasn1
-Version:	0.6.1
+Summary:	ASN.1 tools for Python
+Version:	0.6.3
 Release:	1
-License:	BSD
+License:	BSD-2-Clause
 Group:		Development/Python
-Url:		https://pyasn1.sourceforge.net/
-Source0:	https://files.pythonhosted.org/packages/source/p/pyasn1/pyasn1-%{version}.tar.gz
-BuildArch:	noarch
+URL:		https://github.com/pyasn1/pyasn1
+Source0:	https://files.pythonhosted.org/packages/source/p/%{module}/%{module}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
+
 BuildSystem:	python
+BuildArch:	noarch
+BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(wheel)
 %rename pyasn1
 
 %description
@@ -18,5 +23,5 @@ compiler is planned for implementation in the future.
 
 %files
 %doc CHANGES.rst LICENSE.rst README.md TODO.rst
-%{python_sitelib}/pyasn1
-%{python_sitelib}/pyasn1-%{version}.dist-info
+%{python_sitelib}/%{module}
+%{python_sitelib}/%{module}-%{version}.dist-info
