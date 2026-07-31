@@ -2,7 +2,7 @@
 
 Name:		python-pyasn1
 Summary:	ASN.1 tools for Python
-Version:	0.6.3
+Version:	0.6.4
 Release:	1
 License:	BSD-2-Clause
 Group:		Development/Python
